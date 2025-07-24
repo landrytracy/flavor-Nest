@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Delicious Food</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <section class="contact-section">
+      <div class="section-header">
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">
+          Have a question about our delicious menu or want to make a
+          reservation? We'd love to hear from you!
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="info-header">Visit Our Kitchen</h2>
+          <p class="info-description">
+            Come experience the magic of our culinary artistry. From farm-fresh
+            ingredients to award-winning dishes, every meal is a celebration of
+            flavor.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Restaurant Location</h4>
+              <p>123 Culinary Street<br />Food District, City 2573</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Reservations</h4>
+              <p>+254793050301<br />Call for bookings</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>hello@Flavor-nest.com<br />info@Flavor-nest.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h4>Opening Hours</h4>
+              <p>
+                Mon-Thu: 11:00 AM - 10:00 PM<br />
+                Fri-Sat: 11:00 AM - 11:00 PM<br />
+                Sunday: 12:00 PM - 9:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div class="special-hours">
+            <h5>🎉 Happy Hour Special</h5>
+            <p>
+              Monday-Friday 3:00 PM - 6:00 PM<br />20% off Desserts & Snacks!
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="success-message" id="successMessage">
+            Thank you! Your message has been received. We'll get back to you
+            soon with something delicious!
+          </div>
+
+          <div class="form-header">
+            <h3 class="form-title">Send Us a Message</h3>
+            <p class="form-subtitle">
+              Whether it's feedback, questions, or catering inquiries - we're
+              all ears!
+            </p>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+              />
+              <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your.email@example.com"
+                required
+              />
+              <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="inquiry">Type of Inquiry</label>
+              <select id="inquiry" name="inquiry" class="form-select" required>
+                <option value="">Select inquiry type</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="catering">Catering Services</option>
+                <option value="feedback">Feedback</option>
+                <option value="menu">Menu Questions</option>
+                <option value="events">Private Events</option>
+                <option value="Your-order">Your Order</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error-message" id="inquiryError"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                required
+                placeholder="Tell us how we can help you... Are you planning a special celebration? Have dietary restrictions? We'd love to know!"
+              ></textarea>
+              <div class="error-message" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
