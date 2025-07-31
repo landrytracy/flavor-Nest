@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Drinks Menu</title>
+    <link rel="stylesheet" href="special-menu.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="floating-elements"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>Premium Collection</h1>
+        <p>Curated wines, champagnes & handcrafted cocktails</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-button active" onclick="showSection('wines')">
+          Fine Wines
+        </button>
+        <button class="tab-button" onclick="showSection('champagne')">
+          Champagne
+        </button>
+        <button class="tab-button" onclick="showSection('cocktails')">
+          Cocktails
+        </button>
+      </div>
+
+      <div id="wines" class="menu-section active">
+        <h2 class="section-title">Fine Wines</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Merlot</div>
+              <div class="item-price">ksh1100</div>
+            </div>
+            <div class="item-description">
+              An exceptional Merlot with notes of dark berries, cedar, and
+              elegant tannins. A true masterpiece from one of France's most
+              prestigious estates.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">13.5% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Opus One</div>
+              <div class="item-price">Ksh1000</div>
+            </div>
+            <div class="item-description">
+              A collaboration between Baron Philippe de Rothschild and Robert
+              Mondavi. Rich, full-bodied with layers of black fruit and spice.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">14.5% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Barolo Brunate</div>
+              <div class="item-price">Ksh1200</div>
+            </div>
+            <div class="item-description">
+              Classic Piedmont Nebbiolo with intense aromatics of rose, tar, and
+              red cherry. A wine that embodies the soul of Italy.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">14% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Shiraz</div>
+              <div class="item-price">Ksh1400</div>
+            </div>
+            <div class="item-description">
+              Crisp and vibrant with tropical fruit flavors, fresh herbs, and a
+              mineral.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">13% ABV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="champagne" class="menu-section">
+        <h2 class="section-title">Champagne</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">vintage</div>
+              <div class="item-price">Ksh1500</div>
+            </div>
+            <div class="item-description">
+              The epitome of luxury champagne with complex flavors of brioche,
+              honey, and citrus. Each vintage tells its own unique story.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">12.5% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Non-Vintage</div>
+              <div class="item-price">Ksh1800</div>
+            </div>
+            <div class="item-description">
+              A blend of over 120 wines from different years, creating an
+              extraordinary complexity with notes of nuts, spices, and dried
+              fruits.
+            </div>
+            <div class="item-details">
+              <span class="vintage">NV</span>
+              <span class="region">Champagne, France</span>
+              <span class="alcohol">12% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Rose Champagne</div>
+              <div class="item-price">Ksh1700</div>
+            </div>
+            <div class="item-description">
+              Elegant and floral with delicate bubbles. The iconic bottle design
+              matches the refined character of this exceptional champagne.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">12.5% ABV</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Prestige Cuvée</div>
+              <div class="item-price">Ksh2100</div>
+            </div>
+            <div class="item-description">
+              A prestige cuvée with remarkable depth and structure. Rich, creamy
+              texture with notes of vanilla and toasted almonds.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">12% ABV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cocktails" class="menu-section">
+        <h2 class="section-title">Handcrafted Cocktails</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Smoking Old Fashioned</div>
+              <div class="item-price">Ksh1200</div>
+            </div>
+            <div class="item-description">
+              Premium bourbon, maple syrup, aromatic bitters, and a hint of
+              smoke. Served with a large ice cube and garnished with an orange
+              peel.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Bourbon Base</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Elderflower Martini</div>
+              <div class="item-price">Ksh1400</div>
+            </div>
+            <div class="item-description">
+              Premium gin, elderflower liqueur, fresh lime juice, and a splash
+              of champagne. Delicately floral and refreshingly crisp.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Gin Base</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Golden Hour</div>
+              <div class="item-price">Ksh1500</div>
+            </div>
+            <div class="item-description">
+              Aged rum, passion fruit, honey, fresh lime, and a touch of gold
+              leaf. A tropical escape in a glass with luxurious presentation.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Rum Base</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Midnight in Tokyo</div>
+              <div class="item-price">Ksh1800</div>
+            </div>
+            <div class="item-description">
+              Japanese whisky, plum wine, yuzu juice, and shiso leaf. An elegant
+              East-meets-West creation with umami complexity.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Whisky Base</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Lavender Bee's Knees</div>
+              <div class="item-price">Ksh1600</div>
+            </div>
+            <div class="item-description">
+              Gin infused with lavender, local honey, lemon juice, and bee
+              pollen rim. A sophisticated twist on the prohibition classic.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Gin Base</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <div class="item-name">Dragon's Breath</div>
+              <div class="item-price">Ksh2000 </div>
+            </div>
+            <div class="item-description">
+              Mezcal, dragon fruit, lime, agave, and a rim of chili salt. Served
+              with dramatic dry ice presentation for a mystical experience.
+            </div>
+            <div class="item-details">
+              <span class="alcohol">Mezcal Base</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="special-menu.js"></script>
+  </body>
+</html>

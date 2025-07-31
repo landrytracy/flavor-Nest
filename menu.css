@@ -67,7 +67,59 @@
     footer {
       text-align: center;
       background-color: #8b0000;
-      color: white;
+      color:bisque;
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    #order {
+  padding: 40px 20px;
+  background-color: black;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: bisque;
+}
+
+.order-form input,
+.order-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.order-form textarea {
+  min-height: 80px;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color:#b30000;;
+  color: b;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #d35400;
+}
