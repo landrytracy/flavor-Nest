@@ -1,0 +1,57 @@
+#order {
+  padding: 40px 20px;
+  background-color: black;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: bisque;
+}
+
+.order-form input,
+.order-form textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.order-form textarea {
+  min-height: 80px;
+}
+
+.contact-form button {
+  background-color: #e67300;
+  color: bisque;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ button {
+ background-color: maroon;
+ color: azure;
+ padding: 12px 24px;
+ font-size: 16px;
+ border: #e67300;
+ border-radius: 8px;
+ transition: background-color 2s ease;   
+}

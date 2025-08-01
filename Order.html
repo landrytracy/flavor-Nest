@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="Order.css" />
+
+  </head>
+
+  <body>
+    <section id="order" class="content-section">
+  <div class="section-container">
+    <h2 class="section-title">Place Your Order</h2>
+    <p class="section-subtitle">We can't wait to serve you!</p>
+
+    <form class="order-form">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="07xx xxx xxx" required>
+      </div>
+
+      <div class="form-group">
+        <label for="order-items">What would you like to order?</label>
+        <textarea id="order-items" name="order-items" placeholder="E.g. 1 large Pizza Margherita, 2 Smoothies..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="delivery">Delivery Location</label>
+        <input type="text" id="delivery" name="delivery" placeholder="e.g. Garden City, Nairobi" required>
+      </div>
+
+      
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+  </div>
+</section>
+
+   
+</body>
+</html>
+
+

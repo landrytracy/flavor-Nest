@@ -108,6 +108,14 @@
 .order-form textarea {
   min-height: 80px;
 }
+.order-button{
+ color: maroon;
+ padding: 12px 24px;
+ font-size: 16px;
+ border: #e67300;
+ border-radius: 8px;   
+ 
+}
 
 .submit-btn {
   padding: 12px;
@@ -121,5 +129,29 @@
 }
 
 .submit-btn:hover {
-  background-color: #d35400;
+background-color: #d35400;
 }
+
+.order-button-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.order-button {
+  background-color: #b30000;
+  color: bisque;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-button:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
+

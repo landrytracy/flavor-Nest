@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, black 0%, black 50%, brown 100%);
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
@@ -67,7 +67,7 @@ body {
 }
 
 @keyframes glow {
-    from { text-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+    from { text-shadow: 0 0 20px rgba(255, 217, 0, 0.781); }
     to { text-shadow: 0 0 40px rgba(255, 215, 0, 0.6); }
 }
 
@@ -219,7 +219,7 @@ body {
 .vintage,
 .region,
 .alcohol {
-    background: rgba(255, 215, 0, 0.1);
+    background: rgba(89, 0, 255, 0.048);
     padding: 5px 12px;
     border-radius: 15px;
     border: 1px solid rgba(255, 215, 0, 0.2);
@@ -242,7 +242,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    background: linear-gradient(90deg, transparent, #ffd000, transparent);
 }
 
 .floating-elements {
@@ -259,7 +259,7 @@ body {
     position: absolute;
     width: 6px;
     height: 6px;
-    background: rgba(255, 215, 0, 0.3);
+    background: rgba(255, 217, 0, 0.288);
     border-radius: 50%;
     animation: float 8s infinite linear;
 }

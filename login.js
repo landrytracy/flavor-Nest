@@ -1,44 +1,47 @@
-//  Correct Firebase imports
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+// Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-//  Firebase config
-const firebaseConfig = {
-  apiKey: "AIzaSyDdCnJ-HyzEAd_O_MUn8SDMnRmrE7xMxoY",
-  authDomain: "flavor-nest-d0123.firebaseapp.com",
-  projectId: "flavor-nest-d0123",
-  storageBucket: "flavor-nest-d0123.appspot.com",
-  messagingSenderId: "604663391583",
-  appId: "1:604663391583:web:5e5e6c44208db0a2d142ea",
-  measurementId: "G-MBJQ87SMP3",
-};
+import { getAuth, signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCFihBao6WHvYHYbiEDEeHhAINnRSWJb14",
+    authDomain: "flavor-nest-f1062.firebaseapp.com",
+    projectId: "flavor-nest-f1062",
+    storageBucket: "flavor-nest-f1062.firebasestorage.app",
+    messagingSenderId: "922981259493",
+    appId: "1:922981259493:web:aca4f025ca0a9af09e1c0c"
+  };
 
-//  Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app); // Initialize auth service
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 
-//  Login button event listener
-const submit = document.getElementById("submit");
-submit.addEventListener("click", function (event) {
-  event.preventDefault();
+  
+  //submit button
+  
+  const submit = document.getElementById('submit');
+  submit.addEventListener("click",function(event) {
+    event.preventDefault()
+    const auth = getAuth();
+//inputs
+  const email = document.getElementById('email') .value;
+  const password = document.getElementById('password') .value;
 
-  //  Get form input values
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+signInWithEmailAndPassword (auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    alert("sign-up...")
+    window.location.href = "grand.html";
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+    // ..
+  });
 
-  signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      alert("Login successful!");
-      window.location.href = "grand.html"; // Redirect on success
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert("Error: " + errorMessage);
-    });
-});
-
-
-
+  })
 

@@ -89,7 +89,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 // Success confetti effect
 function createFoodConfetti() {
-  const confettiEmojis = ["🎉", "✨", "🍾", "🥳", "🎊"];
+  const confettiEmojis = ["🎉"];
 
   for (let i = 0; i < 10; i++) {
     setTimeout(() => {
